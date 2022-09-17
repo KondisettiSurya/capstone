@@ -1,0 +1,58 @@
+
+
+.banner{
+    background-image: url('../../../assets/images/bg-1.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    object-fit: contain;
+    height: 44.8rem;
+}
+.banner_buttons {
+   
+    font-size: 2rem;
+    margin-left: 4rem;
+    margin-top: 1rem;
+}
+h1{
+    font-size: 3.2rem;
+    margin-left: 4rem;
+    padding-top: 16rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: rgb(201, 64, 64);
+ 
+}
+.banner_buttons .desc{
+    font-size: 1.4rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    color: rgb(201, 64, 64);
+    
+
+}
+button{
+    margin-top: 2rem;
+}
+
+@media (max-width:700px){
+
+    .banner{
+        height: 20rem;
+    }
+    h1{
+        font-size: 1rem;
+        margin-left: 1rem;
+        padding-top: 7rem;
+    }
+    .banner_buttons .desc{
+        font-size: 0.5rem;
+        margin-left: -2.2rem;
+        margin-top: -1.2rem;   
+    }
+    button{
+        font-size: 0.5rem;
+        margin-top: -1.2rem;
+        margin-left: -2.2rem;
+    }
+}

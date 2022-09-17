@@ -1,0 +1,68 @@
+
+ img{
+    border-radius: 3rem;
+    flex: 1;
+    height: 40rem;
+    object-fit: cover;
+    margin-left: 0.5px;
+    
+}  
+.h1{
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+
+.favourite{
+    position: absolute;
+    top: 14rem;
+    right: 1rem;
+    font-size: 2rem;
+}
+
+.favourite.not{
+    color: rgb(235, 21, 21);
+}
+
+
+@media screen and (max-width: 600px) {
+   
+    img{
+        height: 15.6rem;
+        margin-left: 4px;
+    }
+    }
+    .h1{
+        font-size: 40px;
+        margin-top: 30px;
+        margin-left: 20px;
+    }
+    .favourite{
+       
+        top: 38rem;
+        right: 1rem;
+        font-size: 2.5rem;
+    }
+  
+
+
+
+
+@media screen and (max-width: 400px) {
+   
+    img{
+        height: 14rem;
+        margin-left: 3px;
+    }
+    .h1{
+        font-size: 25px;
+         margin-left: 8px;
+        margin-top: 20px;
+    }
+    .favourite{
+       
+        top: 29rem;
+        right: 1rem;
+        font-size: 1.5rem;
+    }
+} 

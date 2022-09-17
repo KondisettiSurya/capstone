@@ -1,0 +1,25 @@
+
+
+<section >
+  <div class="loginBox"> <img class="user" src="https://i.ibb.co/yVGxFPR/2.png" height="100px" width="100px">
+      <h3>Welcome</h3>
+      <form [formGroup]="registerForm" (ngSubmit)="onsubmit()">
+          <div class="inputBox"> 
+              <input type="text" formControlName="firstname" name="firstName" [(ngModel)]="user.firstname" placeholder="Firstname">
+              <small  *ngIf="registerForm.controls['firstname'].dirty && registerForm.hasError('required','firstname')" class="text-danger">First name should atleast consists 6 characters</small>
+              <input type="text" formControlName="lastname" name="lastname" [(ngModel)]="user.lastname" placeholder="Lastname">  
+              <small *ngIf="registerForm.controls['lastname'].dirty && registerForm.hasError('required','lastname')" class="text-danger">last name should atleast contains 6 characters </small>
+              <input type="text" formControlName="username" name="Username" [(ngModel)]="user.username" placeholder="Username"> 
+              <small *ngIf="registerForm.controls['username'].dirty && registerForm.hasError('required','username')" class="text-danger">username should be invaild type</small>
+              <input type="email" formControlName="email" name="email" [(ngModel)]="user.email" placeholder="Email">
+              <small *ngIf="registerForm.controls['email'].dirty && registerForm.hasError('required','email')" class="text-danger">Email should not consists Special characters</small> 
+              <input id="pass" formControlName="password"  type="password" [(ngModel)]="user.password"  name="Password" placeholder="Password" >
+              <small *ngIf="registerForm.controls['password'].dirty && registerForm.hasError('required','password')" class="text-danger">Password should consists of 9 characters</small> 
+          </div> 
+           <button class="button">Signup</button>
+          <p style="color: #59238F; text-align: center;"> <a routerLink="/login">Login</a></p>
+      </form> 
+                
+  </div>
+  </section>
+ 
